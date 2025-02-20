@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random WhatsApp Redirect</title>
+    <script>
+        function redirectToWhatsApp() {
+            // Yahan apne WhatsApp numbers add karein
+            var numbers = [
+                "919876543210", // Number 1
+                "919876543211", // Number 2
+                "919876543212", // Number 3
+                "919876543213"  // Number 4
+            ];
+
+            // Random number select karna
+            var randomIndex = Math.floor(Math.random() * numbers.length);
+            var selectedNumber = numbers[randomIndex];
+
+            // WhatsApp link generate karna
+            var whatsappLink = "https://wa.me/" + selectedNumber;
+
+            // Redirect karna
+            window.location.href = whatsappLink;
+        }
+    </script>
+</head>
+<body onload="redirectToWhatsApp()">
+    <h2>कृपया प्रतीक्षा करें, आपको व्हाट्सएप पर भेजा जा रहा है...</h2>
+</body>
+</html>
